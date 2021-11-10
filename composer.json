@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "campusbokhandeln/refactor",
+    "description": "Interview package",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "campusbokhandeln",
+        "refactor"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/campusbokhandeln/refactor",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Isak Berglind",
+            "email": "info@isakberglind.se",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Campusbokhandeln\\Refactor\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Campusbokhandeln\\Refactor\\Tests\\": "tests"
         }
     },
     "scripts": {
