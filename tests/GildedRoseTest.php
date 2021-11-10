@@ -2,9 +2,9 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase;
-use Campusbokhandeln\Refactor\Item;
 use Campusbokhandeln\Refactor\GildedRose;
+use Campusbokhandeln\Refactor\Item;
+use PHPUnit\Framework\TestCase;
 
 class GildedRoseTest extends TestCase
 {
@@ -53,12 +53,12 @@ class GildedRoseTest extends TestCase
         $app = new GildedRose($items);
         $output = '';
         for ($i = 0; $i <= $days; $i++) {
-            $output.= "-------- day ${i} --------" . PHP_EOL;
-            $output.= 'name, sellIn, quality' . PHP_EOL;
+            $output .= "-------- day ${i} --------" . PHP_EOL;
+            $output .= 'name, sellIn, quality' . PHP_EOL;
             foreach ($items as $item) {
-                $output.= $item . PHP_EOL;
+                $output .= $item . PHP_EOL;
             }
-            $output.= PHP_EOL;
+            $output .= PHP_EOL;
             $app->updateQuality();
         }
 
